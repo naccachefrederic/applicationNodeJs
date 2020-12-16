@@ -4,14 +4,14 @@ pipeline {
   stages {
     stage('build') {
       steps {
-                npm install
-                npm install mocha -g
-                npm install mocha --save-dev
+                bat 'npm install'
+                bat 'npm install mocha -g'
+                bat 'npm install mocha --save-dev'
       }
     }
     stage('test') {
       steps {
-        npm run test
+        bat 'npm run test'
       }
     }
   }
