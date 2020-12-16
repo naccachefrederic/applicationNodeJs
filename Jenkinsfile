@@ -3,10 +3,10 @@ pipeline {
     stages { 
         stage('Build') { 
             steps { 
-                    npm install
-                    npm install mocha -g
-                    npm install mocha --save-dev
-                    npm run test 
+                    @npm install
+                    @npm install mocha -g
+                    @npm install mocha --save-dev
+                    @npm run test 
             }
         }
     }
