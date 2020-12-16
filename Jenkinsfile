@@ -3,7 +3,10 @@ pipeline {
     stages { 
         stage('Build') { 
             steps { 
-               echo 'This is a minimal pipeline.' 
+                    npm install
+                    npm install mocha -g
+                    npm install mocha --save-dev
+                    npm run test 
             }
         }
     }
