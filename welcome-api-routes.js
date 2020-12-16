@@ -8,4 +8,9 @@ apiRouter.route('/welcome-api/public/:name')
     res.send('bonjour '+name);
 });
 
+function add(a,b)
+{
+    return (a+b);
+}
+
 module.exports.apiRouter = apiRouter;
